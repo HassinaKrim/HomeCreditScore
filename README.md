@@ -24,8 +24,7 @@ La partie features engineering n'étant pas la partie la plus importante de ce p
 
 
 ## Modèle de classification
-Le modèle retenu pour cet exercice est le modèle XGBoost. Cependant les résultats ne sont pas bons, et ceci est en partie dû au features engineering qui n'est pas assez abouti car il ne s'appuie pas sur les données qui peuvent être très utiles à notre problème. J'aurais dû utiliser un notebook plus approprié.
-
+Le modèle retenu pour cet exercice est le modèle LightGBM.
 ## Dashboard / API
 J'ai utilisé:
  - MLflow pour la création de l'API et Azure Machine Learning Studio pour le déploiment 
