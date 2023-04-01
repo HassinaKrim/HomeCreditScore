@@ -47,7 +47,8 @@ st.caption("""
 
 st.write("")
 
-DATA_URL = "C:/Users/hassi/Project07/Data_dashbord/df_sample_index"
+# DATA_URL = "C:/Users/hassi/Project07/Data_dashbord/df_sample_index"
+DATA_URL = "https://raw.githubusercontent.com/HassinaKrim/HomeCreditScore/main/Data_dashbord/df_sample_index"
 
 data_load_state = st.text('Chargement des données... Veuillez-patienter')
 data_csv = pd.read_csv(DATA_URL, index_col=0)
