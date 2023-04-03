@@ -47,7 +47,8 @@ st.caption("""
 
 st.write("")
 
-# DATA_URL = "C:/Users/hassi/Project07/Data_dashbord/df_sample_index"
+#DATA_URL = "C:/Users/hassi/Downloads/gregoire/data/app/df_test_sample"
+#DATA_URL = "https://raw.githubusercontent.com/HassinaKrim/HomeCreditScore/main/Data_dashbord/df_test_sample"
 DATA_URL = "https://raw.githubusercontent.com/HassinaKrim/HomeCreditScore/main/Data_dashbord/df_sample_index"
 
 data_load_state = st.text('Chargement des données... Veuillez-patienter')
@@ -719,12 +720,12 @@ def main():
 
         score = res_str_list[0][1]
         
-        if score >= 0.07: # treshold 
+        if score <= 0.05: # treshold 
             reponse = st.markdown(":green[Félicitations! Votre demande de crédit a été acceptée.]")
         else :
             reponse = st.markdown(":red[Malheureusement, votre demande de crédit ne peux pas aboutir pour le moment.]")
         score_display = round(score, 2)
-        seuil = 0.07
+        seuil = 0.05
 
         col1, col2 = st.columns(2)
         with col1:
