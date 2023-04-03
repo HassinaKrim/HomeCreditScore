@@ -48,8 +48,6 @@ st.caption("""
 st.write("")
 
 <<<<<<< HEAD
-#DATA_URL = "C:/Users/hassi/Downloads/gregoire/data/app/df_test_sample"
-#DATA_URL = "https://raw.githubusercontent.com/HassinaKrim/HomeCreditScore/main/Data_dashbord/df_test_sample"
 DATA_URL = "https://raw.githubusercontent.com/HassinaKrim/HomeCreditScore/main/Data_dashbord/df_sample_index"
 =======
 DATA_URL = "https://raw.githubusercontent.com/HassinaKrim/HomeCreditScore/main/Data_dashbord/df_test_sample"
