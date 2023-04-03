@@ -47,9 +47,13 @@ st.caption("""
 
 st.write("")
 
+<<<<<<< HEAD
 #DATA_URL = "C:/Users/hassi/Downloads/gregoire/data/app/df_test_sample"
 #DATA_URL = "https://raw.githubusercontent.com/HassinaKrim/HomeCreditScore/main/Data_dashbord/df_test_sample"
 DATA_URL = "https://raw.githubusercontent.com/HassinaKrim/HomeCreditScore/main/Data_dashbord/df_sample_index"
+=======
+DATA_URL = "https://raw.githubusercontent.com/HassinaKrim/HomeCreditScore/main/Data_dashbord/df_test_sample"
+>>>>>>> b13ad726174e7a1910a6d78e71a83da623528d75
 
 data_load_state = st.text('Chargement des données... Veuillez-patienter')
 data_csv = pd.read_csv(DATA_URL, index_col=0)
