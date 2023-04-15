@@ -717,22 +717,22 @@ def main():
 
         score = res_str_list[0][1]
         
-        if score <= 0.05: # treshold 
+        if 1-score <= 1-0.05: # treshold 
             reponse = st.markdown(":green[Félicitations! Votre demande de crédit a été acceptée.]")
         else :
             reponse = st.markdown(":red[Malheureusement, votre demande de crédit ne peux pas aboutir pour le moment.]")
-        score_display = round(score, 2)
-        seuil = 0.05
+        score_display = round(1-score, 2)
+        seuil =1- 0.05
 
         col1, col2 = st.columns(2)
         with col1:
             st.metric(label = 'Votre score', value = score_display)
 
         with col2:
-            st.metric(label = 'Seuil maximal', value = seuil, help="Vous devez obtenir un score inférieur pour que votre demande de crédit soit acceptée")
+            st.metric(label = 'Seuil Maximal', value = seuil, help="Vous devez obtenir un score inférieur pour que votre demande de crédit soit acceptée")
    
   
-        st.caption("Le résultat ci-dessus a été dûment étudié par nos services. Veuillez trouver ci-dessous des éléments étayants notre décision.")
+    st.caption("Le résultat ci-dessus a été dûment étudié par nos services. Veuillez trouver ci-dessous des éléments étayants notre décision.")
 
     # Appel de la fonction de prédiction quand le bouton défini ci-dessous est cliqué
     if st.button("Votre résultat"):
